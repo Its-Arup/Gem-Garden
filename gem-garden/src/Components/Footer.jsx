@@ -129,4 +129,11 @@ const DIV = styled.div`
       gap: 15px;
     }
   }
+
+  @media (max-width: 580px) {
+    .container{
+      grid-template-columns: repeat(1,1fr);
+      gap: 15px;
+    }
+  }
 `;

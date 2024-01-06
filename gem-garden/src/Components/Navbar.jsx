@@ -155,4 +155,10 @@ const DIV = styled.div`
       display: block;
     }
   }
+
+  @media (max-width: 580px) {
+    .logo h1{
+      font-size: 18px;
+    }
+  }
 `;

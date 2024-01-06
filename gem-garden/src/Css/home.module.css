@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&family=Oswald:wght@500&display=swap");
+*{
+    box-sizing: border-box;
+}
+.new_collections,
+.categories,
+.best_seller {
+  margin: 80px auto;
+  width: 90%;
+}
+.new_collections_heading,
+.best_seller_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.common_heading_h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+}
+.new_collections_heading_p {
+  font-family: "Nunito Sans", sans-serif;
+}
+.new_collections_heading_right,
+.categories_end,
+.best_seller_heading_right {
+  letter-spacing: 3px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.common_anchor {
+  text-decoration: none;
+  color: black;
+}
+.new_collection_products,
+.best_seller_products {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.categories {
+  display: flex;
+}
+.categories_left {
+  width: 60%;
+}
+.categories_right {
+  width: 50%;
+  padding: 10px;
+}
+.categories_right_img {
+  width: 100%;
+}
+.categories_items {
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.categories_items_h4 {
+  transition: 0.3s;
+}
+.categories-items_h4:hover {
+  font-size: large;
+}
+.gift {
+  margin: 100px 0;
+  width: 100%;
+  background-image: url("../Assets/gift.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.gift_text{
+    color: white;
+}
+.gift_text_h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 45px;
+}
+.gift_text_p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+}
+.gift_text_end {
+  margin-top: 30px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-family: "Nunito Sans", sans-serif;
+} 
+.about {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about_left {
+  width: 50%;
+}
+.about_right {
+  width: 40%;
+}
+.about_heading_h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+}
+.about_heaing_p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+}
+.about_text {
+  margin: 30px 0;
+  color: #5d5959;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 30px;
+}
+.about_text_p{
+  font-size: 20px;
+}
+.about_right_img {
+  width: 100%;
+}
+.about_end {
+  margin: 30px 0;
+  letter-spacing: 3px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media (max-width: 780px) {
+  .new_collection_products,
+  .best_seller_products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .categories {
+    flex-direction: column;
+  }
+  .categories_left {
+    width: 100%;
+  }
+  .categories_right {
+    width: 100%;
+  }
+  .gift_text {
+    top: 15%;
+    right: 5%;
+  }
+  .gift_text_h2 {
+    font-size: 18px;
+  }
+  .gift_text_p {
+    font-size: 12px;
+  }
+  .gift_text_end {
+    font-size: 8px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about_heaing_p{
+    font-size: 16px;
+  }
+  .about_text_p{
+    font-size: 12px;
+  }
+  .about_left {
+    width: 100%;
+  }
+  .about_right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .new_collection_products,
+  .best_seller_products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .common_heading_h2 {
+    font-size: 18px;
+  }
+  .new_collections_heading,
+  .best_seller_heading {
+    flex-direction: column-reverse;
+  }
+}
