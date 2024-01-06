@@ -60,7 +60,6 @@ export default Footer;
 
 const DIV = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&family=Oswald:wght@500&display=swap");
-
   .parent {
     display: grid;
     background-color: #2e2c2d;
