@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Cards from "react-credit-cards";
-import "react-credit-cards/es/styles-compiled.css";
+// import Cards from "react-credit-cards";
+// import "react-credit-cards/es/styles-compiled.css";
 import Alert from "./Alert";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -42,12 +42,12 @@ export const CreditCard = () => {
   return (
     <DIV>
     <div className="login">
-    <Cards number={number}
+    {/* <Cards number={number}
     name={name}
     expiry={expiry}
     cvc={cvc}
     focused={focus}
-    />
+    /> */}
     <br />
       <form action="" onSubmit={handleSubmit}>
       <h3>Card Details</h3>
