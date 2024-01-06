@@ -35,8 +35,8 @@ const DIV = styled.div`
   z-index: -1;
 }
 img {
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
   /* object-position: center; */
 }
 .hero-text {
