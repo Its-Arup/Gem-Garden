@@ -32,9 +32,7 @@ function Home() {
   return (
     <DIV>
       <HeroSection />
-
       {/* hero part complete */}
-
       <div className="new-collections">
         <div className="new-collections-heading">
           <div>
