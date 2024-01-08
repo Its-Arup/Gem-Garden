@@ -38,6 +38,8 @@ export const ProductList = () => {
   const handleButton = () => {
     setLimit(limit + 20);
   };
+
+  
   if (isError) {
     return (
       <ERROR>
@@ -45,12 +47,15 @@ export const ProductList = () => {
       </ERROR>
     );
   }
-  console.log(products)
+  
   return (
     <>
       <HeroSection />
       <Sidebar />
       <DIV>
+        {isLoading && <div className="loading-indicator-main">
+            <img src={Loading_Indicator} />
+          </div>}
         <div className="grid-card-parent">
           {products.map((el, i) => {
             return <ProductCard key={el.id} {...el} />;
@@ -59,19 +64,19 @@ export const ProductList = () => {
       </DIV>
       <BUTTON>
         {/* <DIV> */}
-          {products.length == totalProductFetch ? (
-            ""
-          ) : isLoading ? (
-            <div className="loading-indicator">
-              <img src={Loading_Indicator} />
-            </div>
-          ) : (
-            <div className="Load-btn-div">
-              <button onClick={handleButton} className="Load-Button">
-                LOAD MORE
-              </button>
-            </div>
-          )}
+        {products.length == totalProductFetch ? (
+          ""
+        ) : isLoading ? (
+          <div className="loading-indicator">
+            <img src={Loading_Indicator} />
+          </div>
+        ) : (
+          <div className="Load-btn-div">
+            <button onClick={handleButton} className="Load-Button">
+              LOAD MORE
+            </button>
+          </div>
+        )}
         {/* </DIV> */}
       </BUTTON>
     </>
@@ -92,6 +97,14 @@ const DIV = styled.div`
     row-gap: 40px;
     padding: 50px;
   }
+  .loading-indicator-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+
   @media screen and (max-width: 1200px) {
     .grid-card-parent {
       grid-template-columns: repeat(3, 1fr);
@@ -127,7 +140,7 @@ const BUTTON = styled.div`
     text-align: center;
     align-items: center;
     background-color: white;
-    border: 1px solid #AEAEAE;
+    border: 1px solid #aeaeae;
     border-radius: 8px;
     letter-spacing: 1px;
     font-family: "Nunito Sans", sans-serif;
