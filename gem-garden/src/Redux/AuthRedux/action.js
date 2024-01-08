@@ -23,10 +23,12 @@ const logOut =(dispatch) =>{
   dispatch({type:ADMIN_LOGOUT});
 }
 
+const Base_URL = "https://baby-blue-clam-kit.cyclic.app/" 
+
 const getUserData = () => (dispatch) => {
   dispatch({ type: FETCH_USER_DATA_REQUEST });
   return axios
-    .get("https://gem-gardern-mock-api.onrender.com/users")
+    .get(`${Base_URL}users`)
     .then((res) => {
       dispatch({ type: FETCH_USER_DATA_SUCCESS, payload: res.data });
     })
@@ -35,5 +37,5 @@ const getUserData = () => (dispatch) => {
 
 export { loginSuccess, getUserData, loginFailure,logOut };
 export const a = (id) => {
-  axios.delete(`https://gem-gardern-mock-api.onrender.com/users`, id);
+  axios.delete(`${Base_URL}users`, id);
 };
