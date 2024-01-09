@@ -1,7 +1,7 @@
 import { GET_PRODUCT_FAILURE, GET_PRODUCT_REQUEST, GET_PRODUCT_SUCCESS } from "./actionTypes"
 import axios from 'axios'
 
-const Base_URL = "https://baby-blue-clam-kit.cyclic.app/" 
+const Base_URL = "https://gem-garden-backend-server.onrender.com/" 
 
 export const getProduct = (params) => (dispatch)=>{
     dispatch({type: GET_PRODUCT_REQUEST})

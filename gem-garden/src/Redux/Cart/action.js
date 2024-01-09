@@ -6,7 +6,7 @@ import {
   PATCH_CART_REQUEST_SUCCESS,
 } from "./actionType";
 
-const Base_URL = "https://baby-blue-clam-kit.cyclic.app/" 
+const Base_URL = "https://gem-garden-backend-server.onrender.com/" 
 
 export const getUser = (id) => (dispatch) => {
   dispatch({ type: GET_REQUEST });

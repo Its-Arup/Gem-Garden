@@ -1,7 +1,7 @@
 import axios from "axios";
 import { SIGNUP_FAILURE, SIGNUP_REQUEST, SIGNUP_SUCCESS } from "./actionType";
 
-const Base_URL = "https://baby-blue-clam-kit.cyclic.app/" 
+const Base_URL = "https://gem-garden-backend-server.onrender.com/" 
 
 export const signUp = (payload) => (dispatch)=>{
 dispatch({ type: SIGNUP_REQUEST });

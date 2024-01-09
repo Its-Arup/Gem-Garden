@@ -23,7 +23,7 @@ const logOut =(dispatch) =>{
   dispatch({type:ADMIN_LOGOUT});
 }
 
-const Base_URL = "https://baby-blue-clam-kit.cyclic.app/" 
+const Base_URL = "https://gem-garden-backend-server.onrender.com/" 
 
 const getUserData = () => (dispatch) => {
   dispatch({ type: FETCH_USER_DATA_REQUEST });

@@ -2,7 +2,7 @@ import axios from "axios"
 import { ADMIN_DELETE_REQUEST, ADMIN_EDIT_REQUEST, POST_PRODUCT_FAILURE, POST_PRODUCT_REQUEST, POST_PRODUCT_SUCCESS } from "./actionTypes"
 import { GET_PRODUCT_FAILURE } from "./actionTypes"
 
-const Base_URL = "https://baby-blue-clam-kit.cyclic.app/" 
+const Base_URL = "https://gem-garden-backend-server.onrender.com/" 
 
 export const editProduct = (id, data) => (dispatch) => {
 
